@@ -51,8 +51,18 @@ android {
 }
 
 dependencies {
-    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
-    implementation("com.google.firebase:firebase-analytics")
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.vectordrawable.animated)
+    implementation(libs.androidx.core.ktx)
+    // Required when asking for permission to post notifications (starting in Android 13)
+    implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.messaging)
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.installations)
+    implementation(libs.androidx.work.runtime)
+    implementation(libs.material)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
