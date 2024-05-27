@@ -19,6 +19,7 @@ workRuntime = "2.9.0"
 workRuntimeKtx = "2.9.0"
 playServicesTasks = "18.1.0"
 firebaseMessagingKtx = "24.0.0"
+google-gms-google-services = "4.4.1"
 
 [libraries]
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
@@ -52,4 +53,4 @@ firebase-messaging-ktx = { group = "com.google.firebase", name = "firebase-messa
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "google-gms-google-services"}
